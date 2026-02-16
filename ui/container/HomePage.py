@@ -1,5 +1,4 @@
 from tkinter import ttk
-from ui.container import RegisterPage
 
 class HomePage(ttk.Frame):
 
@@ -12,6 +11,6 @@ class HomePage(ttk.Frame):
         go_button = ttk.Button(
             self,
             text="Go to Register",
-            command=lambda: controller.show_frame(RegisterPage)
+            command=lambda: controller.show_frame("RegisterPage")
         )
         go_button.pack()

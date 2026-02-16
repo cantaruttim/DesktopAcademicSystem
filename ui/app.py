@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
-
+from ui.container.HomePage import HomePage
+from ui.container.RegisterPage import RegisterPage
 
 class App(tk.Tk):
 
@@ -16,14 +17,14 @@ class App(tk.Tk):
 
         self.frames = {}
 
-        # Registrar telas
         for F in (HomePage, RegisterPage):
             frame = F(container, self)
-            self.frames[F] = frame
+            self.frames[F.__name__] = frame
             frame.grid(row=0, column=0, sticky="nsew")
 
-        self.show_frame(HomePage)
+        self.show_frame("HomePage")
 
-    def show_frame(self, page):
-        frame = self.frames[page]
+    def show_frame(self, page_name):
+        frame = self.frames[page_name]
         frame.tkraise()
+
