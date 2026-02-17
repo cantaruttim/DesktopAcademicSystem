@@ -1,0 +1,17 @@
+=== STUDENT ===
+ID: db03fb0f-fc3b-4063-ba08-de0d8ae0c94e
+Security Number: 33791102800
+Name: Gabriella Quinteiro
+Birth Date: Ferreira
+Campus: Campestre
+Email: gabriella.quinteiro@hotmail.com
+Phone: (11)959564272
+Course: Corp
+
+--- USER ---
+User ID (same as student): db03fb0f-fc3b-4063-ba08-de0d8ae0c94e
+Username: 20262800Co
+Password: 2026Co022800
+
+=============================
+

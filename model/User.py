@@ -16,22 +16,3 @@ class User:
             userName=defaultUserName(student),
             userPassword=defaultPassword(student)
         )
-
-# Exemplo de uso
-
-s = Student(
-    id=uuid4(),
-    securityNumber="44069617809",
-    firstName="Matheus",
-    familyName="de Almeida Cantarutti",
-    birthDate="1994-07-20",
-    adaiCampus="ADAI - Campestre",
-    studentEmail="cantaruttim@outlook.com",
-    studentPhone="(11)932045898",
-    courseEnrolled="TM16"
-)
-
-u = User.from_student(s)
-
-print(u.userName)
-print(u.userPassword)
